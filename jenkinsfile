@@ -43,7 +43,7 @@ pipeline {
 	
 	stage('---tomcat---'){
 	steps {
-deploy adapters: [tomcat9(credentialsId: '4da08f1c-7ef8-4d84-8929-2f51fb1705ca', path: '', url: 'http://3.27.249.238:8080/')], contextPath: null, war: '*.war'
+deploy adapters: [tomcat9(credentialsId: '4da08f1c-7ef8-4d84-8929-2f51fb1705ca', path: '', url: 'http://3.27.249.238:8080/')], contextPath: null, war: 'tomcat.war'
 	}
 	}
 	}
